@@ -1,0 +1,16 @@
+{
+  "name": "crypto-arsenal_project",
+  "version": "1.0.0",
+  "description": "the project for back-end exam",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "author": "Tim Chang",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^1.6.8",
+    "express": "^4.19.2"
+  }
+}
