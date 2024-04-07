@@ -6,7 +6,7 @@
 
 2. formula:
     
-    ROI = positive pnl / total pnl
+    ROI = total pnl / inital ustd
     Win Rate = ( Number of deals you win / Number of deals you purchase ) * 100%
     MDD = max in a period - min in a period percent ( check percentage instead of actuall quantity )
     Odds ratio = the number of positive pnl / the number of negative pnl
