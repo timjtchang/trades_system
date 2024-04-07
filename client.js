@@ -86,6 +86,8 @@ async function getData( callback ){
 
   let total_pnl=0.0  // sum of pnl
 
+  let initial_ustd=80000;
+
   let pnl_arr=[] // pnl array
 
   let sharpo_ratio;
@@ -142,7 +144,6 @@ async function getData( callback ){
             long_st.push( tmp_st.top().fillSz, tmp_st.top().fee );
             tmp_st.pop();
           }
-
 
         }else{
 
@@ -221,8 +222,9 @@ async function getData( callback ){
   
     }
 
+
     //calculate ROI:
-    ROI = pos_quan_pnl/total_pnl;
+    ROI = total_pnl/initial_ustd*100;
     
     //calculate win rate:
     win_rate = pos_num_pnl/close_counter;
@@ -248,8 +250,8 @@ async function getData( callback ){
     std = Math.sqrt( sqr_sum/close_counter);
     sharpo_ratio = mean/std;
 
-    console.log( "ROI: "+ROI );
-    console.log( "MDD: "+MDD );
+    console.log( "ROI: "+ROI+"%" );
+    console.log( "MDD: -"+MDD );
     console.log( "Win Rate: "+win_rate );
     console.log( "Odds ratio: "+odds_ratio );
     console.log( "Profit factor: "+profit_factor );

@@ -4,7 +4,6 @@
     npm install express
     npm install axios
 
-
 2. formula:
     
     ROI = positive pnl / total pnl
@@ -14,7 +13,6 @@
     Profit factor = actual positive pnl / actual negative pnl
     Sharpe Ratio =  expactation / standard deviation
     
-
 
 3. parameters & data structure:
 
@@ -30,6 +28,8 @@
         max_price //  to record max price
 
         total_pnl  // sum of pnl with fee
+
+        initial_cost // 8000 ustd
 
         pnl_arr[] // pnl array
 
@@ -156,6 +156,7 @@
 5. output as PDF
 
     print ROI
+    print MDD
     print win_rate
     print Odd ratio
     print profit factor
